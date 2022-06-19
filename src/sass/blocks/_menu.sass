@@ -1,0 +1,31 @@
+.menu
+    margin-top: 15px
+    padding: 10px 35px
+    display: flex
+    justify-content: center
+    align-items: center
+    column-gap: 160px
+    border: 1px solid #fff
+    border-radius: 50px
+    &__items
+        display: flex
+        list-style-type: none
+        column-gap: 48px
+        margin: 0
+        padding: 0
+    &__item
+        &::after
+            content: url('../icons/promo/Arrow.svg')
+        &_without-arrow
+            &::after
+                display: none
+    &__link
+        padding-right: 10px
+        text-decoration: none
+        color: #fff
+        font-weight: 400
+        font-size: 18px
+        line-height: 26px
+        
+
+

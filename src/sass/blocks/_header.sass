@@ -1,0 +1,35 @@
+.header
+    padding: 0 65px
+    max-width: 1790px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__logo
+        display: flex
+        column-gap: 12px
+    &__nav
+        display: flex
+        flex-direction: column
+    &__info
+        padding-right: 80px
+        display: flex
+        justify-content: flex-end
+        column-gap: 48px
+        color: #fff
+        font-weight: 400
+        font-size: 18px
+        line-height: 26px
+    &__phone
+        text-decoration: none
+        color: #fff
+    &__lang
+        position: relative
+        padding-right: 20px
+        &::after
+            content: url('../icons/promo/Arrow.svg')
+            position: absolute
+            top: 0
+            right: 0
+        
