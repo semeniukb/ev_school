@@ -5,10 +5,14 @@
     display: flex
     justify-content: space-between
     align-items: center
-
+    
     &__logo
         display: flex
-        column-gap: 12px
+        column-gap: 10px
+        &_small
+            display: none
+    &__name
+        width: 230px
     &__nav
         display: flex
         flex-direction: column
@@ -26,7 +30,7 @@
         text-decoration: none
         color: #fff
         &:hover
-            color: #00d9ff
+            color: $main_color
     &__lang
         position: relative
         padding-right: 20px
@@ -44,4 +48,4 @@
         color: #fff
         &:hover
             color: #fff
- 
+    

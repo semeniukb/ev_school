@@ -1,0 +1,68 @@
+.mobile
+    &__menu
+        display: none
+        padding: 60px 20px
+        z-index: 10
+        height: 100vh
+        width: 100vw
+        background-color: $main_color
+    &__head
+        display: flex
+        justify-content: space-between
+    &__close
+        width: 33px
+        height: 15px
+        span
+            display: block
+            height: 5px
+            width: 100%
+            margin-bottom: 5px
+            background: #FFFFFF
+            border-radius: 5px
+            transition: 0.5s all     
+            &:nth-child(1)
+                transform: translateY(5px) rotate(-45deg)
+            &:nth-child(2)
+                transform: translateY(-5px) rotate(45deg)
+    &__socials
+        margin-top: 60px
+        height: 41px
+        background-color: gray
+    &__call
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: self-start
+    &__text
+        font-weight: 500
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+        margin-bottom: 25px
+    &__phone
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+        color: #FFFFFF
+        margin-bottom: 20px
+        text-decoration: none
+        &:last-child
+            margin-bottom: 0
+    &__items
+        padding: 0
+        margin: 0
+        list-style-type: none
+        margin-top: 30px
+    &__item
+        margin: 0 0 25px 0
+        &_arrow
+            &::after
+                content: url('../icons/promo/mobile_arrows.svg')
+    &__link
+        font-weight: 500
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+        text-decoration: none
+        margin-right: 15px
+        
