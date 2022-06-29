@@ -1,17 +1,23 @@
 .mobile
     &__menu
-        display: none
+        display: block
         padding: 60px 20px
         z-index: 10
         height: 100vh
-        width: 100vw
+        width: 80vw
         background-color: $main_color
+        position: absolute
+        top: 0
+        left: -100%
+        &_active
+            left: 0
+            transition: 0.5s all
     &__head
         display: flex
         justify-content: space-between
     &__close
-        width: 33px
-        height: 15px
+        width: 35px
+        height: 25px
         span
             display: block
             height: 5px
@@ -25,9 +31,24 @@
             &:nth-child(2)
                 transform: translateY(-5px) rotate(45deg)
     &__socials
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        column-gap: 3vw
         margin-top: 60px
         height: 41px
-        background-color: gray
+    &__social
+        display: flex
+        justify-content: center
+        width: 32px
+        height: 32px
+        background-color: #fff
+        border-radius: 100%
+        a
+            display: flex
+            align-items: center
+            color: $main_color
+            text-decoration: none
     &__call
         margin-top: 30px
         display: flex
@@ -55,9 +76,8 @@
         margin-top: 30px
     &__item
         margin: 0 0 25px 0
-        &_arrow
-            &::after
-                content: url('../icons/promo/mobile_arrows.svg')
+        &_drop
+            margin: 0 0 25px 0
     &__link
         font-weight: 500
         font-size: 24px
@@ -65,4 +85,29 @@
         color: #FFFFFF
         text-decoration: none
         margin-right: 15px
+        position: relative
+        &:hover
+            color: #fff
+        &_arrow
+            &::after
+                content: url('../icons/promo/mobile_arrows.svg')
+                position: absolute
+                bottom: 1px
+                right: -35px  
+        // &_arrow
+        //     &_active >
+        //         transform: rotate(-90deg)
         
+    &__dropdown
+        display: none
+        flex-direction: column
+        margin-bottom: 25px
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+        a
+            color: #fff
+            text-decoration: none
+            margin-bottom: 16px
+            &:last-child
+                margin-bottom: 0
