@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('mobile__menu_active');
-        })
+        });
     });
     // 
 });
