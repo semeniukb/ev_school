@@ -1,0 +1,63 @@
+.help
+    padding-top: 140px
+    &__title
+        width: 550px
+    &__subtitle
+        margin-top: 30px
+        width: 370px
+    &__wrapper
+        margin-top: 20px
+        display: grid
+        grid-template-columns: repeat(auto-fit, 336px)
+        grid-auto-rows: minmax(371px, auto)
+        gap: 25px
+    .vertical
+        grid-column: 4 / 5
+        grid-row: 1 / 3
+    .horizontal
+        grid-column: 1 / 3
+        grid-row: 2 / 3
+    &__tab
+        padding: 40px 30px 35px 25px
+        background: #FFFFFF
+        box-shadow: 1px 1px 21px #E2E0E0
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+    &__header
+        // min-height: 61px
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+        color: #141516
+    &__descr
+        margin-top: 10px
+        flex: 1 1 auto
+        font-weight: 400
+        font-size: 18px
+        line-height: 26px
+        color: #141516
+    &__link
+        padding: 0 0 0 28px
+        display: flex
+        align-items: center
+        width: 216px
+        height: 51px
+        border: 1px solid $main_color
+        border-radius: 35px
+        text-decoration: none
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: $main_color
+        &:hover
+            color: $main_color
+        &::after
+            content: url('../icons/button_arrow_up.png')
+            margin-left: 15px
+    &__image
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 10px

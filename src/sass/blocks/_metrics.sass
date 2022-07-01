@@ -1,0 +1,58 @@
+.metrics
+    padding-top: 140px
+    min-height: 768px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        column-gap: 60px
+    &__info
+        width: 50%
+    &__subtitle
+        margin-top: 25px
+        width: 57%
+    &__image
+        margin-top: 35px
+        img
+            width: 100%
+            height: 53%
+            object-fit: cover
+            border-radius: 30px
+    &__stat
+        width: 50%
+        display: grid
+        grid-template-columns: repeat(auto-fit, 196px)
+        grid-auto-rows: minmax(262px, auto)
+        gap: 25px
+        align-content: end
+    &__block
+        padding: 45px 19px 25px 19px
+        display: flex
+        flex-direction: column
+        align-items: center
+        border-radius: 20px
+        background: #FB7C84
+        box-shadow: 8px -10px 23px #F1F1F1, -8px 10px 23px #F1F1F1
+        &_orange
+            background-color: #FFB865
+        &_lemon
+            background-color: #D4EE47
+        &_green
+            background-color: #6ED6A4
+        &_violet
+            background-color: #883CDA
+        &_blue
+            background-color: #5AC4FF
+    &__percent
+        margin-top: 23px
+        font-family: 'Impact', sans-serif
+        font-weight: 400
+        font-size: 48px
+        line-height: 59px
+        color: #FFFFFF
+    &__descr
+        margin-top: 12px
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+        color: #FFFFFF
