@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <div class="promo" id="main">
         <header class="header">
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" class="header__logo">
                 <div class="header__name">
@@ -303,7 +303,99 @@
             </div>
         </div>
     </section>
-
+    <section class="explore">
+        <div class="container">
+            <div class="explore__wrapper">
+                <div class="explore__column">
+                    <h2 class="title explore__title">Допомагаємо дітям самостійно
+                        досліджувати світ і себе в  ньому</h2>
+                    <div class="subtitle explore__subtitle">«Ми створили школу, де сучасні академічні знання поєднуються з атмосферою свободи, творчості, рівності, відкритості та щирості. Де в основі навчання у дітей лежить зацікавленість та жага до пізнання навколишнього світу. Де немає «Треба, тому що треба», а важливі почуття та думки маленьких і дорослих учнів. Де в пріоритеті завжди щастя, безпека, розвиток та самовираження кожної дитини.»</div>
+                    <div class="explore__info">
+                        <div class="explore__founder">Олена Вєдєрнікова</div>
+                        <div class="explore__descr">Засновниця мережі закладів освіти, мати 4-х дітей</div>
+                    </div>
+                    <img class="explore__dots" src="icons/explor_dots.png" alt="Many circle dots">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <h2 class="title price__title">Вартість навчання</h2>
+            <div class="price__wrapper">
+                <div class="price__block">
+                    <div class="price__icon">
+                        <img src="icons/Price/man_1_2.png" alt="small man">
+                    </div>
+                    <h4 class="price__header">0 клас</h4>
+                    <div class="price__permonth">9 500 грн/місяць</div>
+                    <div class="price__descr">Вартість навчання</div>
+                    <div class="price__value">15 000 грн</div>
+                    <div class="price__info">Вступний внесок одноразово</div>
+                    <div class="price__individual">Індивідуальній підхід до харчування</div>
+                </div>
+                <div class="price__block">
+                    <div class="price__icon price__icon_blue">
+                        <img src="icons/Price/man_1_2.png" alt="small man">
+                    </div>
+                    <h4 class="price__header">1 - 6 клас</h4>
+                    <div class="price__permonth">13 500 грн/місяць</div>
+                    <div class="price__descr">Вартість навчання</div>
+                    <div class="price__value">15 000 грн</div>
+                    <div class="price__info">Вступний внесок одноразово</div>
+                    <div class="price__individual">Індивідуальній підхід до харчування</div>
+                </div>
+                <div class="price__block">
+                    <div class="price__icon price__icon_crimson">
+                        <img src="icons/Price/computer.png" alt="computer">
+                    </div>
+                    <h4 class="price__header">Онлайн школа</h4>
+                    <div class="price__permonth">3 000 – 8 500 грн/місяць</div>
+                    <div class="price__descr">Вартість навчання
+                        залежить від класу та
+                        погодженої програми</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="form">
+        <div class="container">
+            <div class="form__wrapper">
+                <div class="form__elements">
+                    <img class="form__picture" src="img/Form/Students_form.png" alt="Students">
+                    <img class="form__dots form__dots_small" src="icons/forms/dots_1.png" alt="dots">
+                    <img class="form__dots form__dots_big" src="icons/forms/dots_2.png" alt="dots">
+                </div>
+                <div class="form__future">
+                    <h2 class="title form__title">Майбутнє дитини - 
+                        у ваших руках</h2>
+                    <div class="subtitle form__subtitle">Зверніться за індивідуальною консультацією</div>
+                    <form action="#" class="form__items">
+                        <div class="form__flex form__name">
+                            <input type="text" id="text" name="name" placeholder="Ім’я">
+                            <label class="form__text" for="text">Як до Вас звертатися?</label>
+                        </div>
+                        <div class="form__flex form__phone">
+                            <input name="phone" id="phone" placeholder="+ 380 (00) 000 00 00">
+                            <label class="form__text" for="phone">Ваш номер телефону?</label>
+                        </div>
+                        <div class="form__flex form__email">
+                            <input name="email" id="email" type="email" placeholder="example11@gmail.com">
+                            <label class="form__text" for="email">Ваша електронна адреса?</label>
+                        </div>
+                        <button class="form_btn button">Записатися</button>
+                    </form>
+                    <img class="form__dots form__dots_crims" src="icons/forms/dots_3.png" alt="dots">
+                </div>
+            </div>
+            <div class="modal" id="thanks">
+                <h2 class="title modal__title">Майбутнє дитини - 
+                    у ваших руках</h2>
+                <div class="subtitle modal__subtitle">Дякуємо за Вашу заявку! наш представник скоро зв'яжеться з вами!</div>
+                <a href="#main" class="button modal_btn">На головну</a>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
