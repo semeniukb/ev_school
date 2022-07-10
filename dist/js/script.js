@@ -32,3 +32,57 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+function validateForms(form){
+  $(form).validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: 'required',
+      email: {
+        required: true,
+        email: true
+      }},
+    messages: {
+      name: {
+        required:"Введіть будь ласка ваше ім'я",
+        minlength: jQuery.validator.format("Введіть більше {0} символів")
+      },
+      phone: "Введіть ваш номер телефону",
+      email: {
+        required: "Введіть вашу пошту",
+        email: "Введіть коректу форму емейл@mail.com"
+      }
+    }
+  });
+}
+validateForms('.form__items');
+
+$('input[name=phone]').mask("+38 (999) 999-99-99");
+
+$('[data-form-items=forms]').on('click', function(){
+  $('#thanks').fadeIn('slow');
+});
+$('#modal__close').on('click', function(){
+  $('#thanks').fadeOut();  
+});
+
+$('.form__items').submit(function(e){
+  e.preventDefault();
+
+  if(!$(this).valid()) {
+    return;
+  }
+  $.ajax({
+    type:"POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function(){
+    $(this).find('input').val('');
+    $('form').trigger('reset');
+  });
+  return false;
+  
+});

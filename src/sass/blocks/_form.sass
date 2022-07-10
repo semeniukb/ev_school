@@ -1,6 +1,5 @@
 .form
     padding-top: 140px
-    position: relative
     &__wrapper
         display: flex
         width: 100%
@@ -20,6 +19,7 @@
             z-index: -1
     &__future
         width: 70%
+        position: relative
     &__picture
         display: block
         position: absolute
@@ -71,6 +71,7 @@
         display: flex
         flex-direction: column-reverse
         margin-top: 38px
+        position: relative
         &:first-child
             margin-top: 0
     &__text
@@ -78,8 +79,15 @@
         font-size: 18px
         line-height: 21px
         color: #141516
-        margin-bottom: 16px
+        margin-bottom: 25px
 
     &_btn
         margin-top: 55px
 
+    label.error
+        position: absolute
+        top: 23px
+        left: 0
+        color: $main_color
+        font-weight: 700
+        font-size: 14px
