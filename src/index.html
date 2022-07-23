@@ -66,12 +66,25 @@
                     <a href="tel:+380675399417" class="header__phone">+38 (067) 539-94-17</a>
                     <a href="#" class="header__lang">UA</a>
                     <a href="#" class="header__enter">Вхід</a>
-                    <button id="#" class="button header__button">Записатися</button>
+                    <a id="#" class="button header__button">Записатися</a>
                 </div>
                 <nav class="menu">
                     <ul class="menu__items">
-                        <li class="menu__item">
+                        <li class="menu__item menu__item_hover">
                             <a href="#" class="menu__link">Про нас</a>
+                            <div class="menu__submenu menu__submenu_about">
+                                <ul class="menu__lists">
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Наша місія</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Про школу у СМІ</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Документи</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu__item menu__item_hover">
                             <a href="#" class="menu__link">Наші школи</a>
@@ -104,11 +117,37 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu__item menu__item_mr">
+                        <li class="menu__item menu__item_hover">
                             <a href="#" class="menu__link">Інші послуги</a>
+                            <div class="menu__submenu menu__submenu_services">
+                                <ul class="menu__lists">
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Літній табір</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Позашкільна активність</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Online help</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="menu__item menu__item_mr">
+                        <li class="menu__item menu__item_hover">
                             <a href="#" class="menu__link">Блог</a>
+                            <div class="menu__submenu menu__submenu_blogs">
+                                <ul class="menu__lists">
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Інфо блогу №1</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Інфо блогу №2</a>
+                                    </li>
+                                    <li class="menu__list menu__list_line">
+                                        <a href="#">Інфо блогу №3</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu__item menu__item_without-arrow">
                             <a href="#" class="menu__link">Контакти</a>
@@ -198,20 +237,28 @@
         </header>
         <div class="container">
             <div class="promo__wrapper">
-                <div class="promo__statistics">
-                    <div>5 шкіл</div>
-                    <div>233 039 учня</div>
+                <div class="promo__main">
+                    <div class="promo__statistics">
+                        <div>5 шкіл</div>
+                        <div>233 039 учня</div>
+                    </div>
+                    <h1 class="promo__title">Успішне майбутнє починається в школі</h1>
+                    <div class="promo__descr">Surrounded by New Hampshire’s lakes and White Mountains, Holderness School is a New Hampshire boarding and day school of joyful learners, adventurers, artists, advocates, and athletes. Holderness is more than a school, it’s an elevated experience.</div>
+                    <button class="promo__button button">Читати далі</button>
+                    <a href="https://soundcloud.com/" target="_blank" class="promo__sound">
+                        <img src="icons/promo/sound.png" alt="Sound Icon">
+                    </a>
                 </div>
-                <h1 class="promo__title">Успішне майбутнє починається в школі</h1>
-                <div class="promo__descr">Surrounded by New Hampshire’s lakes and White Mountains, Holderness School is a New Hampshire boarding and day school of joyful learners, adventurers, artists, advocates, and athletes. Holderness is more than a school, it’s an elevated experience.</div>
-                <button class="promo__button button">Читати далі</button>
+                <div class="promo__mobile">
+                    <a href="#" class="promo__head promo__head_line">Головна сторінка</a>
+                    <a href="#">Ковид</a>
+                </div>
             </div>
-            <a href="https://soundcloud.com/" target="_blank" class="promo__sound">
-                <img src="icons/promo/sound.png" alt="Sound Icon">
-            </a>
+
+            
         </div>
     </div>
-    <section class="metrics">
+    <!-- <section class="metrics">
         <div class="container">
             <div class="metrics__wrapper">
                 <div class="metrics__info">
@@ -262,8 +309,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="help">
+    </section> -->
+    <!-- <section class="help">
         <div class="container">
             <h2 class="title help__title">Як ми допомогаємо дітям
                 стати успішними</h2>
@@ -302,8 +349,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="explore">
+    </section> -->
+    <!-- <section class="explore">
         <div class="container">
             <div class="explore__wrapper">
                 <div class="explore__column">
@@ -318,8 +365,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="price">
+    </section> -->
+    <!-- <section class="price">
         <div class="container">
             <h2 class="title price__title">Вартість навчання</h2>
             <div class="price__wrapper">
@@ -357,8 +404,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <div class="form">
+    </section> -->
+    <!-- <div class="form">
         <div class="container">
             <div class="form__wrapper">
                 <div class="form__elements">
@@ -397,8 +444,8 @@
             </div>
             
         </div>
-    </div>
-    <div class="choose">
+    </div> -->
+    <!-- <div class="choose">
         <div class="container">
             <h2 class="title choose__title">Чому потрібно вибирати нас</h2>
             <div class="choose__wrapper">
@@ -476,8 +523,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer">
+    </div> -->
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__header">
@@ -612,10 +659,10 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
-   <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

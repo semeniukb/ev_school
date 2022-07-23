@@ -16,13 +16,18 @@
                 padding-right: 0
         &__button
             display: none
+    .container
+        max-width: 1100px
+    .promo
+        &__title
+            margin-right: 300px
 
     
 @media (max-width: 1199.998px)
     .container
-        max-width: 960px
+        max-width: 950px
     .header
-        max-width: 960px
+        max-width: 980px
         padding: 0 10px
         flex-direction: column
         &__logo
@@ -34,6 +39,9 @@
     .menu 
         &__items
             height: 55px
+    .promo
+        &__title
+            margin-right: 200px
     
         
     
@@ -50,9 +58,26 @@
             height: 45px
     .menu
         &__item
+            padding: 0 18px
+            &_hover
+                &:hover
+                    padding: 10px 18px
+        &__submenu
+            left: 151px
+            &_about
+                left: 27px
+            &_services
+                left: 315px
+            &_blogs
+                left: 478px
+    .promo
+        &__title
             margin-right: 0
-            &_mr
-                margin-right: 20px
+            font-size: 60px
+            line-height: 70px
+        &__sound
+            right: 30px
+            
 
 
 @media (max-width: 767.998px)
@@ -94,6 +119,14 @@
     .mobile
         &__close
             display: none
+    .promo
+        &__title
+            margin-right: 0
+            font-size: 55px
+        &__main
+            padding: 0
+
+
 @media (max-width: 574.998px)
     .container
         width: 100%
@@ -103,6 +136,35 @@
             width: 100vw
         &__close
             display: block
+    .promo
+        &__main
+            display: none
+        &__mobile
+            display: flex
+            align-items: center
+            column-gap: 26px
+            margin-top: 80px
+            font-weight: 400
+            font-size: 16px
+            line-height: 21px
+            a
+                color: #F8F8F8
+                text-decoration: none
+        &__head
+            font-weight: 700
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: -13px
+                width: 1px
+                height: 30px
+                background-color: #fff
             
-
+@media (max-width: 374.998px)
+    .promo
+        height: 335px
+        background: url('../img/bg/head_mobile_bg.png') no-repeat
 
