@@ -21,6 +21,15 @@
     .promo
         &__title
             margin-right: 300px
+    .metrics
+        &__wrapper
+            column-gap: 20px
+        &__info
+            width: 40%
+        &__stat
+            width: 60%
+        &__subtitle
+            width: 100%
 
     
 @media (max-width: 1199.998px)
@@ -42,6 +51,20 @@
     .promo
         &__title
             margin-right: 200px
+    .metrics
+        padding-top: 100px
+        &__wrapper
+            flex-direction: column
+            row-gap: 40px
+            padding: 0 15px
+        &__info
+            width: 80%
+        &__image
+            display: none
+        &__stat
+            width: 100%
+            justify-content: center
+            padding: 0 50px
     
         
     
@@ -77,7 +100,10 @@
             line-height: 70px
         &__sound
             right: 30px
-            
+    .metrics
+        padding-top: 50px
+        &__stat
+            padding: 0            
 
 
 @media (max-width: 767.998px)
@@ -125,6 +151,11 @@
             font-size: 55px
         &__main
             padding: 0
+            margin-top: 250px
+    .metrics
+        &__info
+            width: 100%
+
 
 
 @media (max-width: 574.998px)
@@ -138,6 +169,17 @@
             display: block
     .promo
         &__main
+            margin-top: 130px
+        &__statistics
+            font-size: 20px
+        &__title
+            font-size: 41px
+            line-height: 50px
+        &__descr
+            display: none
+        &__button
+            display: none
+        &__sound
             display: none
         &__mobile
             display: flex
@@ -162,9 +204,46 @@
                 width: 1px
                 height: 30px
                 background-color: #fff
-            
+    .metrics
+        &__stat
+            grid-template-columns: 1fr
+            padding: 0 30px
+
 @media (max-width: 374.998px)
     .promo
-        height: 335px
+        min-height: 335px
         background: url('../img/bg/head_mobile_bg.png') no-repeat
+        &__main
+            display: none
+    .mobile-blocks
+        display: flex
+        flex-direction: column
+        background: #F8F8F8
+        width: 100%
+        padding: 32px 0 25px 0
+        &__title
+            margin: 0
+            color: #000
+            font-weight: 400
+            font-size: 26px
+            line-height: 32px
+        &__descr
+            margin: 0
+            margin-top: 15px
+            width: 100%
+            color: #000
+            display: block
+            font-size: 16px
+            line-height: 19px
+        &__button
+            display: flex
+            margin: 0
+            margin-top: 32px
+            font-size: 16px
+            width: 137px
+            height: 51px
+    .metrics
+        display: none
+            
+
 
