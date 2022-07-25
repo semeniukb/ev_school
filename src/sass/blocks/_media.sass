@@ -30,11 +30,15 @@
             width: 60%
         &__subtitle
             width: 100%
+    .help
+        &__image.vertical
+            display: none
 
     
 @media (max-width: 1199.998px)
     .container
         max-width: 950px
+        padding: 0 15px
     .header
         max-width: 980px
         padding: 0 10px
@@ -56,7 +60,6 @@
         &__wrapper
             flex-direction: column
             row-gap: 40px
-            padding: 0 15px
         &__info
             width: 80%
         &__image
@@ -65,7 +68,14 @@
             width: 100%
             justify-content: center
             padding: 0 50px
-    
+    .help
+        padding-top: 100px
+        &__image.horizontal
+            display: none
+        &__wrapper
+            justify-content: center
+            margin-top: 30px
+
         
     
 @media (max-width: 991.998px)
@@ -101,10 +111,13 @@
         &__sound
             right: 30px
     .metrics
-        padding-top: 50px
+        padding-top: 70px
         &__stat
             padding: 0            
-
+    .help 
+        padding-top: 70px
+        &__wrapper
+            gap: 15px
 
 @media (max-width: 767.998px)
     .container
@@ -155,7 +168,11 @@
     .metrics
         &__info
             width: 100%
-
+    .help
+        &__wrapper
+            grid-template-columns: 1fr
+        &__title
+            width: 100%
 
 
 @media (max-width: 574.998px)
@@ -208,6 +225,10 @@
         &__stat
             grid-template-columns: 1fr
             padding: 0 30px
+    .help
+        display: none
+    .mobile-explore
+        display: block
 
 @media (max-width: 374.998px)
     .promo
