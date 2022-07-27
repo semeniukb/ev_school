@@ -86,3 +86,8 @@ $('.form__items').submit(function(e){
   return false;
   
 });
+
+
+$(document).ready(function(){
+  $(".mobile-slider__wrapper").owlCarousel();
+});

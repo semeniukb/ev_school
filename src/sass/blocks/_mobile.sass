@@ -1,13 +1,12 @@
 .mobile
     &__menu
-        position: fixed
         display: block
         padding: 60px 20px
         z-index: 100
         height: 100%
         width: 80vw
         background-color: $main_color
-        position: absolute
+        position: fixed
         top: 0
         left: -100%
         &_active
@@ -114,6 +113,8 @@
     &__title
         font-size: 26px
         line-height: 32px
+    &__subtitle
+        margin-top: 12px
     &__img
         margin-top: 25px
         height: 300px
@@ -122,3 +123,12 @@
             height: 100%
             object-fit: cover
             border-radius: 15px
+
+.mobile-slider
+    margin-top: 48px
+    &__wrapper
+        display: flex
+        margin-top: 29px
+    &__tab
+        width: 350px
+        height: 300px
