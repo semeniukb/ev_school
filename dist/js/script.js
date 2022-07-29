@@ -89,5 +89,15 @@ $('.form__items').submit(function(e){
 
 
 $(document).ready(function(){
-  $(".mobile-slider__wrapper").owlCarousel();
+  $('.mobile-slider__wrapper').slick(
+    {
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 600,
+      arrows: false,
+      dots: true,
+    }
+  );
 });
+	

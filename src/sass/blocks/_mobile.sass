@@ -1,4 +1,5 @@
 .mobile
+
     &__menu
         display: block
         padding: 60px 20px
@@ -8,7 +9,8 @@
         background-color: $main_color
         position: fixed
         top: 0
-        left: -100%
+        left: -110%
+        overflow: auto
         &_active
             left: 0
             transition: 0.5s all
@@ -126,9 +128,29 @@
 
 .mobile-slider
     margin-top: 48px
+    position: relative
+    padding-bottom: 45px
+    display: none
     &__wrapper
-        display: flex
         margin-top: 29px
+        display: flex
+
+
     &__tab
-        width: 350px
-        height: 300px
+        margin: 0 15px
+        padding: 32px 24px 24px 24px
+        min-height: 280px
+        border-radius: 15px
+    &__header
+        &_fz
+            font-size: 18px
+            line-height: 21px
+    &__descr
+        &_fz
+
+            font-size: 16px
+            line-height: 21px
+    &__link
+        &_mt
+            margin-top: 20px
+
