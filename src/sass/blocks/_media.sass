@@ -33,6 +33,9 @@
     .help
         &__image.vertical
             display: none
+    .explore
+        &__column
+            padding-right: 100px
 
     
 @media (max-width: 1199.998px)
@@ -75,7 +78,13 @@
         &__wrapper
             justify-content: center
             margin-top: 30px
-
+    .explore
+        padding-top: 100px
+        &__wrapper
+            &::before
+                right: 40%
+        &__column
+            width: 60%
         
     
 @media (max-width: 991.998px)
@@ -118,10 +127,19 @@
         padding-top: 70px
         &__wrapper
             gap: 15px
+    .explore
+        padding-top: 70px
+        &__wrapper
+            &::before
+                right: 20%
+        &__column
+            width: 80%
 
 @media (max-width: 767.998px)
     .container
         max-width: 540px
+    .title 
+        // font-size: 40px
     .header
         max-width: auto
         padding: 0 15px
@@ -173,12 +191,28 @@
             grid-template-columns: 1fr
         &__title
             width: 100%
+    .explore
+        &__wrapper
+            &::before
+                right: 15%
+        &__column
+            padding: 40px 30px 0 0
+            width: 85%
+        &__dots
+            right: -165px
+
+
 
 
 @media (max-width: 574.998px)
     .container
         width: 100%
         padding: 0 15px
+    .title
+        font-size: 26px
+        line-height: 32px
+    .subtitle
+        margin-top: 12px
     .mobile
         &__menu
             width: 100vw
@@ -220,6 +254,7 @@
                 height: 30px
                 background-color: #fff
     .metrics
+        padding-top: 42px
         &__stat
             grid-template-columns: 1fr
             padding: 0 30px
@@ -229,7 +264,12 @@
         display: block
     .mobile-slider
         display: block
-
+    .explore
+        display: none
+    .mobile-metrics
+        display: block
+        &__wrapper
+            padding: 0 10px
 
 @media (max-width: 374.998px)
     .promo
@@ -266,6 +306,12 @@
             height: 51px
     .metrics
         display: none
+    .mobile-metrics
+        &__wrapper
+            padding: 0
+        &__block
+            column-gap: 15px
+            padding: 25px 20px
             
 
 
