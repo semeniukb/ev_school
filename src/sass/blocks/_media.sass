@@ -36,7 +36,13 @@
     .explore
         &__column
             padding-right: 100px
-
+    .price
+        &__wrapper
+            column-gap: 50px
+    .form
+        &__future
+            width: 80%
+            padding: 100px 20px 0 440px
     
 @media (max-width: 1199.998px)
     .container
@@ -85,11 +91,29 @@
                 right: 40%
         &__column
             width: 60%
-        
-    
+    .price
+        padding-top: 100px
+    .form
+        padding-top: 100px
+        &__picture
+            display: none
+        &__future
+            padding-left: 200px
+    .choose
+        padding-top: 100px
+        &__item
+            padding-right: 50px
+        &__head
+            padding-right: 30px
+            
+
+
+
 @media (max-width: 991.998px)
     .container
         max-width: 720px
+    .title 
+        font-size: 40px
     .header
         &__logo
             margin-left: -20px
@@ -134,6 +158,32 @@
                 right: 20%
         &__column
             width: 80%
+    .price
+        padding-top: 70px
+        &__wrapper
+            column-gap: 20px
+        &__block
+            padding: 100px 15px 30px 15px
+        &__icon
+            width: 136px
+            height: 136px
+    .form
+        padding-top: 70px
+        &__future
+            padding-left: 70px
+        &__dots
+            &_big
+                right: -40px
+            &_crims
+                right: -160px
+    .choose
+        padding-top: 70px
+        &__item
+            padding-right: 40px
+        &__image
+            display: none
+        &__head
+            padding-right: 50px
 
 @media (max-width: 767.998px)
     .container
@@ -200,8 +250,45 @@
             width: 85%
         &__dots
             right: -165px
-
-
+    .price
+        &__wrapper
+            flex-direction: column
+            row-gap: 80px
+        &__block
+            padding: 140px 40px 30px 40px
+            width: 100%
+            min-height: 300px
+        &__icon
+            width: 166px
+            height: 166px
+    .form
+        margin-top: 70px
+        padding: 30px 0
+        background-color: #F8F8F8
+        &__wrapper
+            height: auto
+            min-height: 435px
+        &__elements
+            display: none
+        &__dots
+            display: none
+        &__future
+            padding: 0
+            width: 100%
+            &::before
+                display: none
+        &__items
+            input
+                width: 100%
+    .choose
+        &__item
+            justify-content: start
+            flex-direction: column
+            row-gap: 20px
+        &__head
+            width: 100%
+        &__descr
+            width: 100%
 
 
 @media (max-width: 574.998px)
@@ -269,7 +356,32 @@
     .mobile-metrics
         display: block
         &__wrapper
+    
             padding: 0 10px
+    .price
+        display: none
+    .form 
+        &__items
+            input
+                border-radius: 15px
+        &_btn
+            width: 137px
+            height: 51px
+            font-size: 17px
+            line-height: 19px
+        &__img
+            display: block
+            text-align: center
+            margin-top: 30px
+            height: 300px
+            border-radius: 15px
+            img
+                height: 100%
+                width: 100%
+                object-fit: cover
+    .choose
+        display: none
+
 
 @media (max-width: 374.998px)
     .promo
