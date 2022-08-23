@@ -13,6 +13,9 @@
     text-align: center;
     width: 100%;
 }
+.mobile-choose-first__wrapper .slick-dots {
+    bottom: -1px;
+}
 .slick-dots li{
     list-style: none;
 }

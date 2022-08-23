@@ -99,5 +99,24 @@ $(document).ready(function(){
       dots: true,
     }
   );
+  $('.mobile-choose-first__wrapper').slick(
+    {
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 600,
+      arrows: false,
+      dots: true,
+    }
+  );
+  $('.mobile-choose-second__wrapper').slick(
+    {
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 600,
+      arrows: false,
+      dots: true,
+    }
+  );
 });
-	

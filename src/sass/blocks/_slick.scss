@@ -46,7 +46,6 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0;
 
     &:before,
     &:after {
@@ -62,9 +61,15 @@
         visibility: hidden;
     }
 }
+.mobile-slider__wrapper .slick-track {
+    padding: 15px 0;
+}
+.mobile-choose-first__wrapper .slick-track {
+    padding-bottom: 35px;
+}
 .slick-slide {
     float: left;
-    height: 100%;
+    height: auto;
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
